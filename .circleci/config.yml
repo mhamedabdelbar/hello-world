@@ -22,7 +22,7 @@ workflows:
   say-hello-workflow:
     jobs:
       - print_hello
-        name: print_hello_1
+        name: 'print_hello_1'
       - print_world
         requires:
-          - print_hello_1
+          - 'print_hello_1'
